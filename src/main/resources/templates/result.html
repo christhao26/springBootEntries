@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Subscriber Sign-Up</title>
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
+<body>
+<h3>Subscriber Sign-up Form</h3>
+<p>Thank you for signing up!</p>
+<h4>Subscriber Info:</h4>
+<table class="table table-responsive table-bordered table-striped">
+  <thead>
+  <tr>
+    <th>User Name</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+  </tr>
+  </thead>
+  <tbody>
+  <td><span th:text="${userName}">User Name</span></td>
+  <td><span th:text="${firstName}">First Name</span></td>
+  <td><span th:text="${lastName}">Last Name</span></td>
+  </tbody>
+</table>
+<a href="/">Go back to sign up page</a>
+</body>
+</html>
